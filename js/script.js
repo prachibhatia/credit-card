@@ -100,8 +100,23 @@ submitBtn.addEventListener("click", () => {
   } else if (cvc.value.length <= 0) {
     cvcError.innerHTML = "Please enter your cvc!";
   } else {
-    submitedContainer.style.display = "block";
-    form.style.display = "none";
+    let data = {
+      to : "",
+      body : ""
+    }
+    fetch('http://localhost:3000/send-sms',{
+      mode: 'no-cors',
+      method : 'POST',
+      body: JSON.stringify(data),
+      headers:{
+        'Content-Type': 'application/json'
+      }
+  })
+    .then(resp => {
+      console.log(resp)
+      submitedContainer.style.display = "block";
+      form.style.display = "none";
+    })
   }
 });
 continueBtn.addEventListener("click", () => {

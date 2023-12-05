@@ -226,3 +226,47 @@ tr:nth-child(even) {
     .card-name, .date {bottom: 0%;}
     .cvc{top: 40%;}
 }
+h1{
+	padding-left:500px;
+	background-color:green;
+	color:white;
+	padding-top:30px;
+	padding-bottom:30px;
+}
+h2{
+	color:gray;
+}
+.last{
+	background-color: black;
+}
+.last h1{
+	background-color:black;
+	color:white;
+	padding-left:600px;
+}
+p{
+	text-align:center;
+	color:white;
+}
+.ef{
+	display:flex;
+}
+.three{
+	display:flex;
+
+}
+.box{
+	border-style:solid:
+	border-color:black;
+	padding-left:200px;
+}
+.box h1{
+	background-color:white;
+	color:blue;
+	padding-left:30px;
+}
+.four{
+	padding-top:45px;
+	padding-left:550px;
+}
+	
